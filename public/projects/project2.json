@@ -1,0 +1,47 @@
+{
+    "projectTitle": "Mined Hackathon 2022",
+    "coverImage": "/images/project-2/img-3.png",
+    "briefDescription": "Centre of Excellence in Data Science (CoE-DS) at CSE Department, Institute of Technology, Nirma University is organizing a 2nd national level online Hackathon (MINeD) during March 3-5, 2022 in collaboration with SUNY Binghamton University, USA. This flagship event attracts UG and PG student participants from across India. Various tracks are sponsored by HOPS HEALTHCARE, Cactus Communications and J k Lakshmi, which will offer a real life challenging problem definitions, prizes and mentorship. The grand prize of $1000 is sponsored by Binghamton University which will be distributed among top 3 winning teams.",
+    "info": [
+        {
+            "type": "image-right",
+            "image": "/images/project-2/img-0.png",
+            "p": "Hackathon registered student can login to their hackathon dashboard. If participant forgot password then he/she can change password as instructions per sended to their email"
+        },
+        {
+            "type": "image-left",
+            "image": "/images/project-2/img-1.png",
+            "p": "Candidate can change him/her personal data."
+        },
+        {
+            "type": "image-top",
+            "image": "/images/project-2/img-2.png",
+            "p": "Hackathon instructions"
+        },
+        {
+            "type": "image-top",
+            "image": "/images/project-2/img-3.png",
+            "p": "Hackathon problem statements"
+        },
+        {
+            "type": "image-left",
+            "image": "/images/project-2/img-4.png",
+            "p": "My team: Here participant can either create own team Or join any created team Or Auto team assignment by there interested problem statement."
+        },
+        {
+            "type": "image-top",
+            "image": "/images/project-2/img-5.png",
+            "p": "Public teams: participant can see all public and can send join request to team captain"
+        },
+        {
+            "type": "image-top",
+            "image": "/images/project-2/img-7.png",
+            "p": "Search: participant can search friends team can send join request to team captain."
+        },
+        {
+            "type": "image-left",
+            "image": "/images/project-2/img-8.png",
+            "p": "Change password: Change password from your old password to new one."
+        }
+    ]
+}

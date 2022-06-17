@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+    @apply backdrop-blur-sm;
+    background-color: rgba(255,255,255,.7);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    @apply text-slate-900;
+}
+
+p {
+    @apply text-lg tracking-wide;
+}
+
+.profileImg {
+    @apply rounded-lg w-[280px] border-green-600 shadow;
+}
+
+.wrapper {
+    @apply max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg w-full;
+}
+
+.nav-link.active {
+    @apply text-green-500 font-semibold border-b-2 border-green-400;
+}
+
+.nav-item {
+    @apply px-3 py-2 hover:text-green-400;
+}
+
+.dot {
+    @apply content-center inline-block w-1 h-1 rounded-full mx-2;
+}
+.dot-2 {
+    @apply content-center inline-block w-2 h-2 rounded-full mx-2;
+}
+
+.project-card {
+    @apply bg-white;
+}
+
+.project-link:hover .project-title {
+    @apply text-green-500;
+}
+
+.social-media-link svg {
+    @apply flex items-center justify-center fill-gray-500 hover:fill-green-500;
+}
+
+.project-title:hover h2 {
+    @apply rotate-0;
+}
+
+/* .shadow-solid-green {
+    box-shadow: 8px 8px 0px 0px #22c55e;
+} */
+
+.big-view {
+    @apply fixed top-0 left-0 bottom-0 right-0 flex justify-center items-center backdrop-blur-sm p-8 m-0 z-50 w-full;
+}
+
+.big-view img {
+    @apply max-w-[968px] w-full;
 }

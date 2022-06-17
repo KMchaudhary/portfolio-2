@@ -1,0 +1,32 @@
+{
+    "projectTitle": "Parixa 22 : Create quizzes for your institute",
+    "coverImage": "/images/project-1/img-1.png",
+    "briefDescription": "",
+    "info": [
+        {
+            "type": "image-top",
+            "image": "/images/project-1/img-1.png",
+            "p": "Create new quiz by simply click on create quiz button. then fill the title and description of quiz then create quiz. you can modify it later."
+        },
+        {
+            "type": "image-left",
+            "image": "/images/project-1/img-5.png",
+            "p": "Edit quiz : Here you can add as many question and its option in the quiz. For now I implemented only single choice, multiple choice and numerical questions, you can add images also to the question. Select correct option for answer key. You can make question required, by making question required attempter will not able to submit quiz util he/she not fill all the required questions. Click on save button to save all changes."
+        },
+        {
+            "type": "image-right",
+            "image": "/images/project-1/img-3.png",
+            "p": "Quiz settings: Quiz setting is very important part of quiz edit. You can set quiz start and ending time during which candidate can attempt quiz not otherwise. You can make quiz public so any one can attempt the quiz. at the bottom of setting dialog box you can get quiz link and share this link to your students to attempt the quiz."
+        },
+        {
+            "type": "image-left",
+            "image": "/images/project-1/img-4.png",
+            "p": "Quiz preview: You can see quiz preview that how quiz will look at attempter side. you can also submit your response."
+        },
+        {
+            "type": "image-right",
+            "image": "/images/project-1/img-2.png",
+            "p": "Quiz responses: Get detail list of all response receive on quiz made by you."
+        }
+    ]
+}
