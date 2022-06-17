@@ -4,8 +4,6 @@ export default function ContactForm() {
 
     const [subject, setSubject] = useState('');
     const [body, setBody] = useState('');
-    console.log(subject);
-    console.log(body);
 
     return (
         <>
