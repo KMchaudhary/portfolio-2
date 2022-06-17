@@ -20,7 +20,6 @@ export default function Project() {
                 }
             })
                 .then(res => {
-                    console.log(res);
                     if(res.status >= 400 )
                         throw new Error("Project not found");
                     return res.json();

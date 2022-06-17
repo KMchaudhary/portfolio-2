@@ -3,6 +3,7 @@ import {useState} from 'react';
 
 import profile from '../assets/profile.jpeg';
 import project1 from '../assets/project1.png';
+import ContactForm from './ContactForm';
 
 
 import ProjectCard from './ProjectCard';
@@ -186,21 +187,8 @@ const Home = () => {
                         <div className="">
                             <h2 className="text-2xl font-bold mb-4 text-center"><span className="py-2 border-b-2 inline-block border-green-300">Contact</span></h2>
                             <p className="my-3 text-slate-600">&rarr; Let's talk more about your next project</p>
-                            <div className="w-[400px] w-full border shadow-sm rounded-lg bg-white">
-                                <form action="mailto:er.kmc2001121@gmail.com" className="p-4" method="post" >
-                                    <div className="mb-4">
-                                        <label className="block mb-2" htmlFor="username">Name</label>
-                                        <input className="outline-none border px-3 py-2 w-full rounded-lg focus:bg-slate-50 focus:border-green-600 focus:ring-1 focus:shadow-sm focus:ring-green-500" type="text" name="username" id="username" required />
-                                    </div>
-                                    <div className="mb-4">
-                                        <label className="block mb-2" htmlFor="message">Message</label>
-                                        <textarea className="outline-none border px-3 py-2 w-full rounded-lg focus:bg-slate-50 focus:border-green-600 focus:ring-1 focus:shadow-sm focus:ring-green-500" type="text" name="message" rows="3" id="username" required/>
-                                    </div>
-
-                                    <button className="w-full p-3 text-white text-lg font-semibold bg-green-500 hover:bg-green-600 focus:ring focus:shadow-sm focus:ring-green-500 rounded-lg">
-                                        Send email
-                                    </button>
-                                </form>
+                            <div className="w-[400px] w-full border shadow-sm rounded-lg bg-white p-3">
+                                <ContactForm />
                             </div>
 
                             <div className="my-5 flex flex-row justify-center">
