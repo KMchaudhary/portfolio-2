@@ -36,7 +36,7 @@ export default function ContactForm() {
                 {/* <button className="w-full block p-3 text-white text-lg font-semibold bg-green-500 hover:bg-green-600 focus:ring focus:shadow-sm focus:ring-green-500 rounded-lg">
                     Send email
                 </button> */}
-                <a href={`mailto:er.kmc2001121@gmail.com?subject=${encodeURI(subject)}&body=${encodeURI(body)}`} className="w-full block p-3 text-white text-lg font-semibold bg-green-500 hover:bg-green-600 focus:ring focus:shadow-sm focus:ring-green-500 rounded-lg">
+                <a href={`mailto:er.kmc2001121@gmail.com?subject=${encodeURI(subject)}&body=${encodeURI(body)}`} className="w-full block p-3 text-center text-white text-lg font-semibold bg-green-500 hover:bg-green-600 focus:ring focus:shadow-sm focus:ring-green-500 rounded-lg">
                     Send email
                 </a>
             </div>

@@ -6,12 +6,12 @@
         {
             "type": "image-right",
             "image": "/images/project-2/img-0.png",
-            "p": "Hackathon registered student can login to their hackathon dashboard. If participant forgot password then he/she can change password as instructions per sended to their email"
+            "p": "Hackathon registered student can login to their hackathon dashboard. If participant forgot password then he/she can change password as per instructions sended to their email"
         },
         {
             "type": "image-left",
             "image": "/images/project-2/img-1.png",
-            "p": "Candidate can change him/her personal data."
+            "p": "Candidate can change his/her personal data."
         },
         {
             "type": "image-top",
@@ -26,17 +26,17 @@
         {
             "type": "image-left",
             "image": "/images/project-2/img-4.png",
-            "p": "My team: Here participant can either create own team Or join any created team Or Auto team assignment by there interested problem statement."
+            "p": "My team: Here participant can either create own team Or join any existing team Or Auto team assignment by there interested problem statement."
         },
         {
             "type": "image-top",
             "image": "/images/project-2/img-5.png",
-            "p": "Public teams: participant can see all public and can send join request to team captain"
+            "p": "Public teams: participant can see all public teams and can send join request to team captain"
         },
         {
             "type": "image-top",
             "image": "/images/project-2/img-7.png",
-            "p": "Search: participant can search friends team can send join request to team captain."
+            "p": "Search: participant can search friends team and can send join request to team captain."
         },
         {
             "type": "image-left",
