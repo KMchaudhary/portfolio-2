@@ -20,7 +20,15 @@ const Home = () => {
             <header className="sticky top-0 z-40 shadow">
                 <div className="px-5 md:px-8 h-[56px] flex flex-row justify-between">
                     <div className="left flex items-center">                        
-                        <div className="logo text-xl font-medium text-blue-700 italic">Developer</div>
+                        <motion.div 
+                            className="logo text-xl font-medium text-blue-700 italic"
+                            initial={{opacity: 0, y:'-40vh'}}
+                            animate={{opacity: 1, y: 0}}
+                            transition={{duration: 0.5, type: 'spring'}}
+                        >
+                            Developer
+                        </motion.div>
+                        {/* <div className="logo text-xl font-medium text-blue-700 italic">Developer</div> */}
                     </div>
                     <div className="center hidden sm:flex items-end ml-4 ">
                         <div className="navbar hidden lg:block">
