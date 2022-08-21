@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 header {
-    @apply backdrop-blur-sm;
+    @apply backdrop-blur;
     background-color: rgba(255,255,255,.7);
 }
 
 body {
-    @apply text-slate-900;
+    @apply text-black text-lg;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -16,7 +17,7 @@ p {
 }
 
 .profileImg {
-    @apply rounded-lg w-[280px] border-green-600 shadow;
+    @apply rounded-lg w-[280px] h-[300px] object-cover;
 }
 
 .wrapper {
@@ -24,11 +25,15 @@ p {
 }
 
 .nav-link.active {
-    @apply text-green-500 font-semibold border-b-2 border-green-400;
+    @apply text-blue-700 font-semibold border-b-2 border-blue-700;
 }
 
 .nav-item {
-    @apply px-3 py-2 hover:text-green-400;
+    @apply px-3 py-2 text-gray-600 text-base hover:text-blue-700;
+}
+
+.nav-link.active .nav-item {
+    @apply text-blue-700 text-lg;
 }
 
 .dot {
@@ -47,7 +52,7 @@ p {
 }
 
 .social-media-link svg {
-    @apply flex items-center justify-center fill-gray-500 hover:fill-green-500;
+    @apply flex items-center justify-center fill-blue-500 hover:fill-blue-700;
 }
 
 .project-title:hover h2 {
