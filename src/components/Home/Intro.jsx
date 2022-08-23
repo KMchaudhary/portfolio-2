@@ -29,7 +29,7 @@ const Intro = ({handleSetTab, viewThreshold}) => {
                     <motion.div
                         initial={{opacity: 0}}
                         animate={{opacity: 1}}
-                        transition={{duration: 0.5, delay: 0.5}}
+                        transition={{duration: 1, delay: 0.5}}
                     >
                         <p className="text-xl md:text-3xl text-center italic">
                             A Web 
@@ -38,7 +38,7 @@ const Intro = ({handleSetTab, viewThreshold}) => {
                                 initial={{x: '-20vw'}} animate={{x: '0'}}
                             >
                                 Developer
-                            </motion.div> who like to work on all aspect of website development, starting from Frontend design to Backend business login & data management
+                            </motion.div> who like to work on all aspect of website development, starting from Frontend design to Backend business logic & data management
                         </p>
                     </motion.div>
                 </div>

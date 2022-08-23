@@ -1,5 +1,5 @@
 import {React, useEffect, useState} from 'react'
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import Block from './Block';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -45,9 +45,9 @@ export default function Project() {
             <main>
                 {
                     data &&
-                    <section className="pt-16 pb-8 bg-gradient-to-b from-green-300 to-white">
+                    <section className="pt-16 pb-8 bg-gradient-to-b from-blue-300 to-white">
                         <div className="wrapper mx-auto px-4">
-                            <h2 className="title text-2xl sm:text-4xl font-semibold font-serif tracking-wide mb-8 pl-4 border-l-4 border-green-500 relative">
+                            <h2 className="title text-2xl sm:text-4xl font-semibold font-serif tracking-wide mb-8 pl-4 border-l-4 border-blue-700 relative">
                                 {data.projectTitle}
                             </h2>
 
@@ -70,8 +70,17 @@ export default function Project() {
                         </div>
                     </section>
                 }
-                
+
             </main>
+
+            <footer>
+                <div className="py-16 flex justify-center">
+                    <Link 
+                        className="py-3 flex justify-center w-[200px] rounded border border-blue-700 text-blue-700 hover:font-medium hover:shadow-lg shadow-blue-500"
+                        to={"/"}
+                    >Back to home</Link>
+                </div>
+            </footer>
         </>    
     )
 }

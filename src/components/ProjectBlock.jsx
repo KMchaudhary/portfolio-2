@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import LinkIcon from 'react-bootstrap-icons/dist/icons/link';
 
 const ProjectBlock = (props) => {
-    const {title, description, technology, projectUrl, blogUrl, position, image} = props;
+    const {title, description, technology, projectUrls, blogUrl, position, image} = props;
     return (
         <>
             <div className={`flex ${position === "left" ? 'justify-end' : 'justify-start'} relative min-h-[320px] mb-20`}>
@@ -39,10 +39,15 @@ const ProjectBlock = (props) => {
                         </div>
                     </div>
                     
-                    <div className="flex items-center">
-                        <LinkIcon className="text-gray-500" size={20} />
-                        <a className="text-blue-500 hover:text-blue-700 underline ml-2" href={projectUrl} rel="noreferrer" target="_blank">{projectUrl}</a>
-                    </div>
+                    {
+                        projectUrls &&
+                        projectUrls.map(projectLink => (
+                            <div className="flex items-center">
+                                <LinkIcon className="text-gray-500" size={20} />
+                                <a className="text-blue-500 hover:text-blue-700 underline ml-2" href={projectLink} rel="noreferrer" target="_blank">{projectLink}</a>
+                            </div>
+                        ))
+                    }
                     
                 </div>
             </div>

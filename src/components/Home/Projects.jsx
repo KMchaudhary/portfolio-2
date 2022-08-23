@@ -53,11 +53,13 @@ const Projects = ({handleSetTab, viewThreshold}) => {
                         <ProjectBlock
                             position="left"
                             title="Mined Hackathon 2022"
-                            description="Application for conducting online quizzes and exams similar to a google form with response store functionality."
+                            description="Application for conduct new hackathon, get registration for hackathon 
+                            and registered students can make team for hackathon. Team request and auto team assignment
+                            functionality make it special."
                             image={`${process.env.PUBLIC_URL}/images/project-2/img-2.png`}
                             blogUrl="/project/2"
-                            projectUrl=""
-                            technology={['Node.js(Express)', 'MongoDB', 'JWT', 'HTML', 'JS', 'Bootstrap']}
+                            projectUrls={["https://www.mined2022.tech"]}
+                            technology={['REST API node.js(Express)', 'SQL', 'JWT', 'Bootstrap', 'Tailwind']}
                         />
 
                         <ProjectBlock
@@ -66,8 +68,17 @@ const Projects = ({handleSetTab, viewThreshold}) => {
                             description="Application for conducting online quizzes and exams similar to a google form with response store functionality."
                             image={project1}
                             blogUrl="/project/1"
-                            projectUrl="http://parixa22.herokuapp.com"
+                            projectUrls={["http://parixa22.herokuapp.com"]}
                             technology={['Node.js(Express)', 'MongoDB', 'JWT', 'HTML', 'JS', 'Bootstrap']}
+                        />
+                        
+                        <ProjectBlock
+                            position="left"
+                            title="DB Designer"
+                            description="webapp for creating SQL-based database schema"
+                            image={`${process.env.PUBLIC_URL}/images/project-3/img-1.png`}
+                            blogUrl="/project/3"
+                            technology={['HTML', 'Javascript', 'CSS(Tailwind)']}
                         />
 
 
