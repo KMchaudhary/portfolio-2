@@ -8,7 +8,6 @@ const Projects = ({handleSetTab, viewThreshold}) => {
     const { ref, inView } = useInView({
         threshold: viewThreshold
     });
-    console.log("Projects is in view : ", inView);
     
     useEffect(() => {
         if(inView) {
@@ -20,7 +19,7 @@ const Projects = ({handleSetTab, viewThreshold}) => {
         <>
             <section id="projects" className="py-8 relative min-h-screen flex items-center">
                 <div ref={ref} className="wrapper mx-auto px-4">
-                    <div className="my-16 font-mono text-2xl font text-blue-700">{'<Projects>'}</div>
+                    <div className="my-16 font-mono text-2xl font text-blue-700 dark:text-blue-300">{'<Projects>'}</div>
                    
 
                     <div className="pl-4 sm:pl-8 md:pl-12">
@@ -105,7 +104,7 @@ const Projects = ({handleSetTab, viewThreshold}) => {
                             </div> */}
                     </div>
 
-                    <div className="my-16 font-mono text-2xl font text-blue-300">{'</Projects>'}</div>
+                    <div className="my-16 font-mono text-2xl font text-blue-300 dark:text-blue-700">{'</Projects>'}</div>
                 </div>
             </section>
         </>

@@ -6,7 +6,6 @@ const Intro = ({handleSetTab, viewThreshold}) => {
     const { ref, inView } = useInView({
         threshold: viewThreshold
     });
-    console.log("Intro is in view : ", inView);
 
     useEffect(() => {
         if(inView) {
@@ -23,7 +22,7 @@ const Intro = ({handleSetTab, viewThreshold}) => {
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5}}
                     >
-                        <h1 className="text-center text-4xl md:text-6xl font-bold mb-10"><span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-purple-500">Hii I'm Kuldip </span> 👋</h1>
+                        <h1 className="text-center text-4xl md:text-6xl font-bold mb-10"><span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-purple-500 dark:from-blue-500 dark:to-purple-500">Hii I'm Kuldip </span> 👋</h1>
                     </motion.div>
 
                     <motion.div
@@ -33,12 +32,12 @@ const Intro = ({handleSetTab, viewThreshold}) => {
                     >
                         <p className="text-xl md:text-3xl text-center italic">
                             A Web 
-                            <motion.div
-                                className="text-blue-700 inline-block" 
+                            <motion.span
+                                className="text-blue-700 dark:text-blue-500 inline-block" 
                                 initial={{x: '-20vw'}} animate={{x: '0'}}
                             >
                                 Developer
-                            </motion.div> who like to work on all aspect of website development, starting from Frontend design to Backend business logic & data management
+                            </motion.span> who like to work on all aspect of website development, starting from Frontend design to Backend business logic & data management
                         </p>
                     </motion.div>
                 </div>

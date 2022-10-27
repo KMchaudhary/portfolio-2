@@ -19,12 +19,12 @@ const ProjectBlock = (props) => {
                     <div className={`flex flex-col ${position === "left" ? 'md:items-end' : 'md:items-start'}`}>
                         <div className="absolute md:hidden inset-0 pointer-events-none z-0 bg-gradient-to-br opacity-20 from-cyan-500 to-indigo-500 rounded-lg"></div>
                         
-                        <h1 className={`text-2xl ${position === "left" ? 'md:text-right' : 'md:text-left'} text-left font-semibold tracking-wide mb-5 z-20 hover:text-blue-700`}>
+                        <h1 className={`text-2xl ${position === "left" ? 'md:text-right' : 'md:text-left'} text-left font-semibold tracking-wide mb-5 z-20 dark:hover:text-blue-300 hover:text-blue-700`}>
                             <Link to={blogUrl}>{title}</Link>
                         </h1>
 
-                        <p className={`md:p-4 py-4 px-0 mb-5 ${position === "left" ? 'md:text-right' : 'md:text-left'} md:shadow-lg md:bg-blue-300 rounded-lg z-20`}>{description}</p>
-                        <div className={`mb-5 -mx-2 md:w-4/5 flex ${position === "left" ? 'md:justify-end' : 'md:justify-start'} justify-left flex-wrap font-mono font-semibold items-center z-20`}>    
+                        <p className={`md:p-4 py-4 px-0 mb-5 ${position === "left" ? 'md:text-right' : 'md:text-left'} md:shadow-lg md:bg-blue-300 dark:md:bg-blue-800 dark:text-slate-200 rounded-lg z-20`}>{description}</p>
+                        <div className={`mb-5 -mx-2 md:w-4/5 flex ${position === "left" ? 'md:justify-end' : 'md:justify-start'} justify-left flex-wrap font-mono font-semibold items-center z-20 dark:text-slate-400`}>    
                             {
                                 technology.map((tech, index) => (
                                     <div key={index} className="flex items-center">
@@ -41,10 +41,10 @@ const ProjectBlock = (props) => {
                     
                     {
                         projectUrls &&
-                        projectUrls.map(projectLink => (
-                            <div className="flex items-center">
+                        projectUrls.map((projectLink, index) => (
+                            <div key={index} className="flex items-center">
                                 <LinkIcon className="text-gray-500" size={20} />
-                                <a className="text-blue-500 hover:text-blue-700 underline ml-2" href={projectLink} rel="noreferrer" target="_blank">{projectLink}</a>
+                                <a className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 hover:underline transition-all ml-2" href={projectLink} rel="noreferrer" target="_blank">{projectLink}</a>
                             </div>
                         ))
                     }
