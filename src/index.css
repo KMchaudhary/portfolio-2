@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     @apply text-lg;
-    scroll-behavior: smooth;
 }
 
 p {
