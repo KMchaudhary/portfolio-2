@@ -109,6 +109,8 @@ const Projects = ({handleSetTab, viewThreshold}) => {
             </section>
         </>
     )
+
+    
 }
 
 export default Projects;
