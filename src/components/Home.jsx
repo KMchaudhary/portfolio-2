@@ -40,7 +40,7 @@ const Home = () => {
 
     return (
         <>
-            <header className="fixed top-0 left-0 right-0 z-50 shadow">
+            <header className="fixed top-0 left-0 right-0 z-40 shadow select-none">
                 <div className={theme}>
                     <div className="backdrop-blur dark:bg-slate-700 bg-white bg-opacity-70">
                         <div className="px-5 md:px-8 h-[56px] flex flex-row justify-between ">
@@ -109,9 +109,7 @@ const Home = () => {
                 <main className="scroll-container bg-slate-50 text-black dark:text-white dark:bg-slate-900">
                     
                     {/* Intro */}
-                    <div className="scroll-el">
-                        <Intro handleSetTab={handleSetTab} viewThreshold={viewThreshold} />
-                    </div>
+                    <Intro handleSetTab={handleSetTab} viewThreshold={viewThreshold} />
 
 
                     {/* <section id="intro" className="py-16 min-h-screen flex items-center">
@@ -134,19 +132,13 @@ const Home = () => {
 
 
                     {/*  Projects  */}
-                    <div className="scroll-el">
-                        <Projects handleSetTab={handleSetTab} viewThreshold={viewThreshold} />
-                    </div>
+                    <Projects handleSetTab={handleSetTab} viewThreshold={viewThreshold} />
 
                     {/* Education */}
-                    <div className="scroll-el">
-                        <Education handleSetTab={handleSetTab} viewThreshold={viewThreshold} />
-                    </div>
+                    <Education handleSetTab={handleSetTab} viewThreshold={viewThreshold} />
 
                     {/* Skills */}
-                    <div className="scroll-el">  
-                        <Skills handleSetTab={handleSetTab} viewThreshold={viewThreshold} />
-                    </div>
+                    <Skills handleSetTab={handleSetTab} viewThreshold={viewThreshold} />
 
 
                     {/*  Area of Interest  */}
@@ -163,9 +155,7 @@ const Home = () => {
                     </section> */}
 
                     {/*  Contact  */}
-                    <div className="scroll-el">
-                        <Contact handleSetTab={handleSetTab} viewThreshold={viewThreshold} />
-                    </div>
+                    <Contact handleSetTab={handleSetTab} viewThreshold={viewThreshold} />
 
 
                     <button 

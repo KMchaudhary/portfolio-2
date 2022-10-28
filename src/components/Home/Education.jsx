@@ -14,7 +14,7 @@ const Education = ({handleSetTab, viewThreshold}) => {
 
     return (
         <>
-            <section id="education" className="py-8 relative min-h-screen flex items-center">
+            <section id="education" className="scroll-el py-8 relative min-h-screen flex items-center">
                 <div ref={ref} className="wrapper mx-auto px-4">
                     <div className="my-16 font-mono text-2xl text-blue-700 dark:text-blue-300">{'<Education>'}</div>
 

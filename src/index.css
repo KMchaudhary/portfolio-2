@@ -19,7 +19,8 @@ p {
 .scroll-container {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: block mandatory;
+    /* scroll-behavior: smooth; */
 }
 .scroll-container::-webkit-scrollbar {
     width: 0;

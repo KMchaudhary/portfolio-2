@@ -15,7 +15,7 @@ const Intro = ({handleSetTab, viewThreshold}) => {
 
     return (
         <>
-            <section id="intro" className="py-16 min-h-screen flex items-center">
+            <section id="intro" className="scroll-el py-16 min-h-screen flex items-center">
                 <div ref={ref} className="wrapper mx-auto px-4">
                     <motion.div
                         initial={{opacity: 0, y:'40vh'}}
