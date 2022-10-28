@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Project from './components/Project';
 import NotFound from './components/NotFound';
 
+
 function App() {
       
   return (

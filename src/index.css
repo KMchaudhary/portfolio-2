@@ -15,6 +15,21 @@ p {
     @apply text-lg tracking-wide;
 }
 
+/* smooth scrollbar animation */
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.scroll-container::-webkit-scrollbar {
+    width: 0;
+}
+.scroll-container .scroll-el {
+    min-height: 100vh;
+    scroll-snap-align: start;
+}
+/* end */
+
 .profileImg {
     @apply rounded-lg w-[280px] h-[300px] object-cover;
 }
